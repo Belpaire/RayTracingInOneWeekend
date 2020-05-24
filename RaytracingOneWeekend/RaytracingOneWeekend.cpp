@@ -3,7 +3,7 @@
 
 #include "RaytracingOneWeekend.h"
 #include "fstream"
-
+#include "vec3.h"
 int main()
 {
 	int nx = 200;
@@ -16,9 +16,10 @@ int main()
 				double r = double(i) / double(nx);
 				double g = double(j) / double(ny);
 				double b = 0.2;
-				int ir = int(255.99 * r);
-				int ig = int(255.99 * g);
-				int ib = int(255.99 * b);
+				auto vector = vec3(r, g, b);
+				int ir = int(255.99 * vector[0]);
+				int ig = int(255.99 * vector[1]);
+				int ib = int(255.99 * vector[2]);
 				ofs << ir << " " << ig << " " << ib << "\n";
 			}
 		}
