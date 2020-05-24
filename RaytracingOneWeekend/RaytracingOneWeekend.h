@@ -4,5 +4,6 @@
 #pragma once
 
 #include <iostream>
-
+#pragma once
+#include "vec3.h"
 // TODO: Reference additional headers your program requires here.

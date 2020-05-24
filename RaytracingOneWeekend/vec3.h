@@ -5,6 +5,7 @@
 
 class vec3 {
 public:
+	vec3 () {}
 	double arr[3];
 	vec3(double x, double y, double z) {
 		arr[0] = x;
@@ -77,7 +78,6 @@ public:
 		return arr[0] * arr[0] + arr[1] * arr[1] + arr[2] * arr[2];
 	}
 };
-
 
 // vec3 Utility Functions
 
